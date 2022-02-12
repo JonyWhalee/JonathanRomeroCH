@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(transparent,#051D2B);
+    border-radius: 40px; 
+}
+body{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #fff;
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,0.9640231092436975) 95%, rgba(255,255,255,0.9136029411764706) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: 10px 10px 15px #5D93FD;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 30px 10%;
+    background-image: linear-gradient(to left,rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0));
+}
+.nav__links{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+.nav__links li {
+    border-radius: 3px;
+    margin: 0 20px;
+} 
+.nav__links  li  a,button{
+    padding: 10px 15px;
+    transition: all 0.3s linear 0s;
+}
+.nav__links li a:hover{
+    color: rgba(0, 136, 169, 1);
+}
+.link a{
+    position: relative;
+} 
+.link a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(0, 136, 169, 1);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+.link a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.logo{
+    height: 40px;
+    font-size: 55px;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes logo{
+    0%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.logo:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+li, a, button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.span1{
+    display: flex;
+    margin: 10;
+    padding: 10px 20px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+}
+li a.active,li a:hover{
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:  rgba(0, 136, 169, 1);
+    line-height: 20px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* fin nav */
+/* comienzo slider " index"*/
+.textoslider{
+    margin-bottom: 100px;
+    text-align: center;
+}
+.slider{
+    width: 100%;
+    /* margin: auto; */
+    overflow: hidden;
+    height: 900px;
+    margin-bottom: 60px;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 700%;
+    animation: cambio 25s infinite alternate linear;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes cambio{
+    0% {margin-left: 0;}
+    15% {margin-left: 0;}
+
+    20% {margin-left: -100%;}
+    30% {margin-left: -100%;}
+
+    35% {margin-left: -200%;}
+    45% {margin-left: -200%;}
+
+    50% {margin-left: -300%;}
+    60% {margin-left: -300%;}
+
+    65% {margin-left: -400%;}
+    75% {margin-left: -400%;}
+
+    80% {margin-left: -500%;}
+    90% {margin-left: -500%;}
+
+    95% {margin-left: -600%;}
+    100% {margin-left: -600%;}
+}
+/* fin slider */
+/*  inico "tiendas" */
+.contenedor {
+    min-height: 600px;
+    width: 100%;
+    display: grid;    
+    padding: 20px;
+    grid-gap: 10px;
+}
+.item{
+    border: 3px solid #fff;
+    filter: grayscale(0%);
+    margin: 0;
+}
+.item:hover{
+    transform: scale(1.04);
+    transition: all 1s;
+    filter: grayscale(100%);
+}  
+.item1{
+    background-image: url("https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png");
+    background-size: cover;
+    background-position: center;
+}
+.item2{
+    background-image: url("https://i.blogs.es/53a886/uncharted4/1366_2000.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.item3{
+    background-image: url("https://www.hd-tecnologia.com/imagenes/articulos/2020/02/Seg%C3%BAn-un-estudio-League-Of-Legends-gener%C3%B3-m%C3%A1s-de-3-millones-de-toneladas-de-CO2-en-2019.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.item4{
+    background-image: url("https://cdn.andro4all.com/files/2020/08/Fall-Guys.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.item5{
+    background-image: url("https://image.api.playstation.com/cdn/UP0700/CUSA02412_00/2pfYJIXY2aTnMUe8eSET7YaxkOcUTbfm.png");
+    background-size: cover;
+    background-position: center;
+
+}
+.item6{
+    background-image: url("https://e00-marca.uecdn.es/imagenes/2015/08/04/e-sports/noticias/1438689415_extras_noticia_foton_7_0.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.item7{
+    background-image: url("https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/es_MX/games/switch/m/minecraft-switch/hero?v=2021120802");
+    background-size: cover;
+    background-position: center;
+}
+.item8{
+    background-image: url("https://i.blogs.es/dbfd92/150620-re8-tlqns/1366_2000.jpeg");
+    background-size: cover;
+}
+.item8:hover{
+    transform: scale(1.02);
+    transition: all 1s;
+}
+/* fin galeria */
+/* inicio "registro"*/
+.fondo{
+    background-image: url("https://www.pcmrace.com/wp-content/uploads/2016/04/outlast-2-01-10-16-1.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    overflow: hidden;
+}
+.registro{
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    /* box-shadow: #808080 15px 15px 15px 15px; */
+    border-radius: 10px;
+    border: solid #000 5px;
+    overflow: hidden;
+}
+.registro h4{
+    font-size: 25px;
+    text-shadow: 0 0 10px #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.registro p{
+    display: inline;
+    text-align: center; 
+}
+.p_bug{
+    margin-left: 85px;
+}
+.controls{
+    width: 100%;
+    background: #232522;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  #fff;
+}
+.controls:hover{
+    transform: scale(1.05);
+}
+.boton:hover{
+    transform: scale(1.05);
+}
+input::placeholder{
+    color: #Fff;
+}
+.registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px ;
+    margin-bottom: 15px;
+}
+.registro a{
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+.registro a:hover{
+    color: #Fff;
+    text-decoration: underline;
+}
+.registro .boton{
+    width: 100%;
+    background: #972117;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+.span1{
+    animation-delay: 3s; 
+    animation-iteration-count: 1;
+}
+/* fin registro */
+/* inicio de cuenta */
+.fondo2{
+    background: url("https://i0.wp.com/hipertextual.com/wp-content/uploads/2020/09/hipertextual-2020173707.jpg?fit=1200%2C675&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.registro2{
+    width: 400px;
+    height: 600px;
+    background-size: cover;
+    padding: 40px;
+    margin: 60px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: #fff 15px 15px 35px;
+    border-radius: 10px;
+}
+.registro2 h4{
+    font-size: 25px;
+    text-shadow: 0 0 10px #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.registro2 p{
+    display: inline;
+    text-align: center; 
+}
+.p_bug2{
+    margin-left: 80px;
+}
+.controls2{
+    width: 100%;
+    background: #000002;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #F4C900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  #fff;
+}
+.controls2:hover{
+    transform: scale(1.05);
+}
+input::placeholder{
+    color: #fff;
+}
+.registro2 p{
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px ;
+    margin-bottom: 15px;
+}
+.registro2 a{
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+.registro2 a:hover{
+    color: #fff;;
+    text-decoration: underline;
+}
+.registro2 .boton2{
+    width: 100%;
+    background: #6C939E;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+    border: 3px solid #323942;
+    border-radius: 5px;
+}
+.boton2:hover{
+    transform: scale(1.05);
+}
+/* fin de cuenta  */
+/* inicio tyc */
+.contenedortyc{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: none;
+    color: #000;
+    background-color: #fff ;
+}
+.tyc,h1{
+    padding: 30px;
+}
+.tyc a{
+    color: blue;
+    text-decoration: none;
+}
+/* fin tyc */
+/* inico de footer */ 
+footer{
+    height: 400px;
+    background: url(..//multimedia/backfooter2.svg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow:hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer h3,p{
+    display: flex;
+}
+footer h3{
+    color: #fff;
+}
+footer h3:hover{
+    text-align: center;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.copyright{
+    opacity: 0.5;
+    margin-top: 30px;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+footer li{
+    display: inline-block;
+    list-style: none;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+.facebook i{
+    color: #fff;
+    font-size: 30px;
+}
+.facebook i:hover{
+    color: #3b5998;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+.instagram i {
+    color: #fff;
+    font-size: 30px;
+    border-radius: 45%;
+}
+.instagram i:hover{
+    background: radial-gradient(circle at 33% 100%,#fed373 4%,#f15245 30%,#d92e7f 62%,#9b36b7 85%,#515ecf);
+    transform: scale(1.5);
+    transition: all 1s;
+    border-radius: 45%;
+}
+.twitter i {
+    color: #fff;
+    font-size: 30px;
+}
+.twitter i:hover{
+    color: #1D9BF0;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+.discord i{
+    color: #fff;
+    font-size: 30px;
+}
+.discord i:hover{
+    color: #5662F6;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+.youtube i{
+    color: #fff;
+    font-size: 30px;
+}
+.youtube i:hover{
+    color: #ff0000;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+.whatsapp i{
+    color: #fff;
+    font-size: 30px;
+}
+.whatsapp i:hover{
+    color: #00bb2d;
+    transform: scale(1.5);
+    transition: all 1s
+}
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    border: 3px solid  #fff;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    align-items: center;
+    border: #0088A9 solid 3px;
+}
+.subir i{
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+}
+.subir:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+/* TODAS media queires  */
+@media only screen and (min-width: 320px) and (max-width:599px){
+    /* nav */
+    .logo{
+        height: 30px;
+        font-size: 40px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .nav__links{
+        flex-direction: column;
+        z-index: 1;
+    }
+    .nav__links li,a{
+        margin: 50px 0;
+    }
+    .nav__links a{
+        font-size: 16px;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(2, 22, 27);
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    li a:hover,li a.active{
+        background: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    /* slider */
+    h2{
+        font-size: 16px;
+    }
+    .textoslider{
+        font-size: 12px;
+    }
+    .slider{
+        height: 250px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .slider img{
+        height: 250px;
+    }
+    /* tienda */
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item1{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-position: left;
+    }
+    .item8{
+        grid-column: 1/3;
+        grid-row: 5/6;
+        background-position: bottom;
+    }
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item1{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-position: left;
+    }
+    .item8{
+        grid-column: 1/3;
+        grid-row: 5/6;
+        background-position: bottom;
+    }
+    /* registro */
+    .fondo{
+        background-position: center;
+    }
+    main h2{
+        font-size: 20px;
+    }
+    .registro h4{
+        font-size: 20px;
+    }
+    .registro{
+        width: 300px;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        padding: 40px;
+        margin: 50px auto;
+        margin-top: 80px;
+        font-size: 14px;
+    }
+    .controls{
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    form .letra{
+        font-size: 14px;   
+    }
+    form .p_bug{
+        margin-left: 40px;
+    }
+    .registro .boton{
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    /* cuenta */
+    .fondo2{
+        background-position: center;
+    }
+    main h2{
+        font-size: 20px;
+    }
+    .registro2 h4{
+        font-size: 20px;
+    }
+    .registro2{
+        width: 300px;
+        height: 500px;
+        padding: 40px;
+        font-size: 14px;
+    }
+    .controls2{
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    form .letra2{
+        font-size: 12px;   
+    }
+    form .p_bug2{
+        margin-left: 40px;
+    }
+    .registro2 .boton2{
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    /* footer */
+    footer{
+        height: 300px;
+        background-size: cover;
+        background-position: bottom;  
+        overflow: hidden;  
+    }
+    footer h3,p{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    footer li{
+        margin: 40px 10px; 
+    }
+    .iconredes i{
+        font-size: 20px;
+    } 
+    .subir{
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        align-items: center;
+    }
+    .subir i{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px){
+    /* nav */
+    .logo{
+        height: 40px;
+        font-size: 50px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(2, 22, 27);
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    .nav__links{
+        flex-direction: column;
+        z-index: 1;
+    }
+    .nav__links li,a{
+        margin: 50px 0;
+    }
+    li a:hover,li a.active{
+        background: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    /* slider */
+    h2 {
+        font-size: 18px;
+    }
+    .textoslider{
+        font-size: 14px;
+    }
+    .slider{
+        height: 350px;
+        width: 100%;
+    }
+    .slider img{
+        height: 350px;
+    }
+    /* tienda */
+    .contenedor{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .item2{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    .item6{
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    .item7{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .item8{
+        grid-column: 3/5;
+    }
+    /* registro */
+    .fondo{
+        background-position: center;
+    }
+    main h2{
+        font-size: 30px;
+    }
+    .registro h4{
+        font-size: 30px;
+    }
+    .registro{
+        width: 350px;
+        height: 450px;
+        background-size: cover;
+        padding: 30px;
+        margin: 60px auto;
+        margin-top: 90px;
+        font-size: 18px;
+    }
+    .controls{
+        width: 100%;
+        padding: 7.5px;
+        border-radius: 5px;
+        margin-bottom: 12px;
+    }
+    form .letra{
+        font-size: 15px;   
+    }
+    form .p_bug{
+        margin-left: 80px;
+    }
+    .registro .boton{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    /* cuenta */
+    .fondo2{
+        background-position: center;
+    }
+    main h2{
+        font-size: 30px;
+    }
+    .registro2 h4{
+        font-size: 30px;
+    }
+    .registro2{
+        width: 350px;
+        height: 550px;
+        padding: 30px;
+        margin: 50px auto;
+        margin-top: 90px;
+        font-size: 18px;
+    }
+    .controls2{
+        width: 100%;
+        padding: 7.5px;
+        border-radius: 5px;
+        margin-bottom: 12px;
+    }
+        form .letra2{
+        font-size: 15px;   
+    }
+    
+    form .p_bug2{
+        margin-left: 60px;
+    }
+    .registro2 .boton2{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    /* footer */
+    footer{
+        height: 350px;
+        background-position: bottom;
+    }
+    footer li{
+        margin: 30px 20px; 
+    }
+    .iconredes i{
+        font-size: 30px;
+    }
+    .subir{
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        align-items: center;
+    }
+    .subir i{
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+@media only screen and (min-width:768px){
+    /* tienda */
+    .contenedor{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+    .item1{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .item2{ 
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .item3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .item4{
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+    .item5{
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    .item6{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .item7{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .item8{
+        background-position: center;
+        grid-column: 3/5;
+        grid-row: 3/4;
+    }
+}
