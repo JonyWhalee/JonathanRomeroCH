@@ -20,10 +20,7 @@ html{
 body{
     font-family: 'Mochiy Pop P One', sans-serif;
     color: #fff;
-    background: rgb(0,0,0);
-    background: linear-gradient(45deg, rgba(0,0,0,0.9640231092436975) 95%, rgba(255,255,255,0.9136029411764706) 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #000;
 }
 main h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -33,6 +30,7 @@ main h2{
     margin-top: 30px;
     margin-bottom: 30px;
     text-shadow: 10px 10px 15px #5D93FD;
+    font-weight: 900;
 }
 nav{
     height: 100px;
@@ -86,6 +84,7 @@ nav{
     animation-duration: 3s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    color: white ;
 }
 @keyframes logo{
     0%{
@@ -99,11 +98,11 @@ nav{
     transform: scale(1.2);
     transition: all 1s;
 }
-li, a, button{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+nav li, a, button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     font-size: 16px;
     color: #edf0f1;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .span1{
     display: flex;
@@ -201,7 +200,7 @@ li a.active,li a:hover{
     filter: grayscale(100%);
 }  
 .item1{
-    background-image: url("https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png");
+    background-image: url("https://media.gq.com.mx/photos/60e9cc9c33c54bdef6761922/master/pass/E53RdQ5WQAIs7HC-scaled.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -218,13 +217,12 @@ li a.active,li a:hover{
 .item4{
     background-image: url("https://cdn.andro4all.com/files/2020/08/Fall-Guys.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center;                    
 }
 .item5{
-    background-image: url("https://image.api.playstation.com/cdn/UP0700/CUSA02412_00/2pfYJIXY2aTnMUe8eSET7YaxkOcUTbfm.png");
+    background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/07/horizon-2-forbidden-west-2013847.jpg?itok=jWf3tCO9");  
     background-size: cover;
     background-position: center;
-
 }
 .item6{
     background-image: url("https://e00-marca.uecdn.es/imagenes/2015/08/04/e-sports/noticias/1438689415_extras_noticia_foton_7_0.jpg");
@@ -263,32 +261,34 @@ li a.active,li a:hover{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
     font-size: 20px;
-    /* box-shadow: #808080 15px 15px 15px 15px; */
+    box-shadow: #808080 0px 0px 40px;
     border-radius: 10px;
-    border: solid #000 5px;
+    /* border: solid #000 5px; */
     overflow: hidden;
 }
 .registro h4{
     font-size: 25px;
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 2px 2px 40px #000;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: 900;
 }
 .registro p{
     display: inline;
     text-align: center; 
 }
 .p_bug{
-    margin-left: 85px;
+    margin-left: 100px;
 }
 .controls{
     width: 100%;
     background: #232522;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
     border: 3px solid #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px ;
     color:  #fff;
 }
 .controls:hover{
@@ -354,9 +354,10 @@ input::placeholder{
 }
 .registro2 h4{
     font-size: 25px;
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 2px 2px 40px #000;
     margin-bottom: 20px;
     text-align: center;
+    font-weight: 900;
 }
 .registro2 p{
     display: inline;
@@ -368,11 +369,12 @@ input::placeholder{
 .controls2{
     width: 100%;
     background: #000002;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
     border: 2px solid #F4C900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
     color:  #fff;
 }
 .controls2:hover{
@@ -428,6 +430,9 @@ input::placeholder{
 .tyc a{
     color: blue;
     text-decoration: none;
+}
+form p a:hover{
+    text-decoration: underline !important;  ;
 }
 /* fin tyc */
 /* inico de footer */ 
@@ -597,6 +602,7 @@ footer li{
     /* slider */
     h2{
         font-size: 16px;
+        font-weight: 900;
     }
     .textoslider{
         font-size: 12px;
@@ -638,7 +644,8 @@ footer li{
     }
     /* registro */
     .fondo{
-        background-position: center;
+        background-size: cover;
+        background-position: left;
     }
     main h2{
         font-size: 20px;
@@ -811,13 +818,14 @@ footer li{
     }
     /* registro */
     .fondo{
-        background-position: center;
+        background-size: cover;
+        background-position: right;
     }
     main h2{
         font-size: 30px;
     }
     .registro h4{
-        font-size: 30px;
+        font-size: 22px;
     }
     .registro{
         width: 350px;
