@@ -29,10 +29,14 @@ main h2{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    text-shadow: 5px 5px 10px #fff;
+    /* text-shadow: 5px 5px 10px #fff; */
     font-weight: 900;
     cursor: pointer;
 }
+/* main h2:hover{
+    transform: scale(1.3);
+    transition: all 1s;
+} */
 nav{
     height: 100px;
     width: 100%;
@@ -263,10 +267,10 @@ a:hover{
     background-image: url("https://i.blogs.es/dbfd92/150620-re8-tlqns/1366_2000.jpeg");
     background-size: cover;
 }
-/* .item8:hover{
+.item8:hover{
     transform: scale(1.02);
     transition: all 1s;
-} */
+}
 /* fin galeria */
 /* inicio "registro"*/
 .fondo{
@@ -353,12 +357,12 @@ input::placeholder{
 
 /* fin registro */
 /* inicio de cuenta */
-.fondo2{
+.fondo-cuenta{
     background: url("https://i0.wp.com/hipertextual.com/wp-content/uploads/2020/09/hipertextual-2020173707.jpg?fit=1200%2C675&ssl=1");
     background-size: cover;
     background-attachment: fixed;
 }
-.registro2{
+.cuenta{
     width: 400px;
     height: 600px;
     background-size: cover;
@@ -370,7 +374,7 @@ input::placeholder{
     box-shadow: #fff 15px 15px 35px;
     border-radius: 10px;
 }
-.registro2 h4{
+.cuenta h4{
     font-size: 25px;
     text-shadow: 2px 2px 40px #000;
     margin-bottom: 20px;
@@ -378,14 +382,14 @@ input::placeholder{
     font-weight: 900;
     cursor: pointer;
 }
-.registro2 p{
+.cuenta p{
     display: inline;
     text-align: center; 
 }
-.p_bug2{
+.p_bug-cuenta{
     margin-left: 80px;
 }
-.controls2{
+.controls-cuenta{
     width: 100%;
     background: #000002;
     padding: 10px;
@@ -396,29 +400,29 @@ input::placeholder{
     font-size: 16px;
     color:  #fff;
 }
-.controls2:hover{
+.controls-cuenta:hover{
     transform: scale(1.05);
 }
 input::placeholder{
     color: #fff;
 }
-.registro2 p{
+.cuenta p{
     height: 40px;
     text-align: center;
     font-size: 16px;
     line-height: 40px ;
     margin-bottom: 15px;
 }
-.registro2 a{
+.cuenta a{
     color: #fff;
     text-decoration: none;
     align-items: center;
 }
-.registro2 a:hover{
+.cuenta a:hover{
     color: #fff;;
     text-decoration: underline;
 }
-.registro2 .boton2{
+.cuenta .boton-cuenta{
     width: 100%;
     background: #6C939E;
     border: none;
@@ -429,7 +433,7 @@ input::placeholder{
     border: 3px solid #323942;
     border-radius: 5px;
 }
-.boton2:hover{
+.boton-cuenta:hover{
     transform: scale(1.05);
 }
 /* fin de cuenta  */
@@ -580,6 +584,7 @@ footer h5{
     text-align: center;
     line-height: 75px;
     cursor: pointer;
+    margin-bottom: 0;
 }
 .subir{
     height: 50px;
@@ -650,7 +655,7 @@ footer h5{
         left: 0;
     }
     /* slider */
-    h2{
+    main h2{
         font-size: 16px;
         font-weight: 900;
     }
@@ -741,34 +746,35 @@ footer h5{
         border-radius: 5px;
     }
     /* cuenta */
-    .fondo2{
+    .fondo-cuenta{
         background-position: center;
     }
     main h2{
         font-size: 20px;
     }
-    .registro2 h4{
+    .cuenta h4{
         font-size: 20px;
     }
-    .registro2{
+    .cuenta{
         width: 300px;
         height: 500px;
         padding: 40px;
         font-size: 14px;
     }
-    .controls2{
+    .controls-cuenta{
         width: 100%;
         padding: 5px;
         border-radius: 5px;
         margin-bottom: 10px;
+        font-size: 12px;
     }
-    form .letra2{
+    form .letra-cuenta{
         font-size: 12px;   
     }
-    form .p_bug2{
+    form .p_bug-cuenta{
         margin-left: 40px;
     }
-    .registro2 .boton2{
+    .cuenta .boton-cuenta{
         width: 100%;
         padding: 5px;
         margin: 10px 0;
@@ -868,7 +874,7 @@ footer h5{
         left: 0;
     }
     /* slider */
-    h2 {
+    main h2 {
         font-size: 18px;
     }
     .textoslider{
@@ -940,16 +946,16 @@ footer h5{
         border-radius: 5px;
     }
     /* cuenta */
-    .fondo2{
+    .fondo-cuenta{
         background-position: center;
     }
     main h2{
         font-size: 30px;
     }
-    .registro2 h4{
+    .cuenta h4{
         font-size: 30px;
     }
-    .registro2{
+    .cuenta{
         width: 350px;
         height: 550px;
         padding: 30px;
@@ -957,20 +963,20 @@ footer h5{
         margin-top: 90px;
         font-size: 18px;
     }
-    .controls2{
+    .controls-cuenta{
         width: 100%;
         padding: 7.5px;
         border-radius: 5px;
         margin-bottom: 12px;
     }
-        form .letra2{
+    form .letra-cuenta{
         font-size: 15px;   
     }
     
-    form .p_bug2{
+    form .p_bug-cuenta{
         margin-left: 60px;
     }
-    .registro2 .boton2{
+    .cuenta .boton-cuenta{
         width: 100%;
         padding: 10px;
         margin: 10px 0;
