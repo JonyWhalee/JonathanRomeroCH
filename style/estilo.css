@@ -203,13 +203,31 @@ li a.active,li a:hover{
 .item:hover{
     transform: scale(1.04);
     transition: all 1s;
-    filter: grayscale(100%);
 }  
 .item1{
-    /* background-image: url("https://media.gq.com.mx/photos/60e9cc9c33c54bdef6761922/master/pass/E53RdQ5WQAIs7HC-scaled.jpg"); */
     background-image: url("https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png");
     background-size: cover;
     background-position: center;
+}
+.precio{
+    text-decoration: none;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #0096c7;
+    opacity: 0.9;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.precio:hover{
+    background-color: #0077b6;
+}
+a:hover{
+    color: #fff;
 }
 .item2{
     background-image: url("https://i.blogs.es/53a886/uncharted4/1366_2000.jpeg");
@@ -232,9 +250,9 @@ li a.active,li a:hover{
     background-position: center;
 }
 .item6{
-    background-image: url("https://e00-marca.uecdn.es/imagenes/2015/08/04/e-sports/noticias/1438689415_extras_noticia_foton_7_0.jpg");
+    background-image: url("https://i.ytimg.com/vi/E3Huy2cdih0/maxresdefault.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 .item7{
     background-image: url("https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/es_MX/games/switch/m/minecraft-switch/hero?v=2021120802");
@@ -245,17 +263,16 @@ li a.active,li a:hover{
     background-image: url("https://i.blogs.es/dbfd92/150620-re8-tlqns/1366_2000.jpeg");
     background-size: cover;
 }
-.item8:hover{
+/* .item8:hover{
     transform: scale(1.02);
     transition: all 1s;
-}
+} */
 /* fin galeria */
 /* inicio "registro"*/
 .fondo{
     background-image: url("https://www.pcmrace.com/wp-content/uploads/2016/04/outlast-2-01-10-16-1.jpg");
     background-attachment: fixed;
     background-position: bottom;
-    /* overflow: hidden; */
 }
 .registro{
     width: 400px;
@@ -676,6 +693,11 @@ footer h5{
         grid-row: 5/6;
         background-position: bottom;
     }
+    .precio{
+        width: 100%;
+        padding: 3px;
+        font-size: 12px;
+    }
     /* registro */
     .fondo{
         background-attachment: fixed;
@@ -881,7 +903,7 @@ footer h5{
     /* registro */
     .fondo{
         background-size: cover;
-        background-position: right;
+        background-position: bottom right;
     }
     main h2{
         font-size: 30px;
@@ -894,7 +916,7 @@ footer h5{
         height: 450px;
         background-size: cover;
         padding: 30px;
-        margin: 60px auto;
+        margin: 120px auto;
         margin-top: 90px;
         font-size: 18px;
     }
