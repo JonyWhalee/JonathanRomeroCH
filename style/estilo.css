@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -20,23 +23,8 @@ html{
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
-    background-color: #000;
+    background-color: #010101;
 }
-main h2{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    /* text-shadow: 5px 5px 10px #fff; */
-    font-weight: 900;
-    cursor: pointer;
-}
-/* main h2:hover{
-    transform: scale(1.3);
-    transition: all 1s;
-} */
 nav{
     height: 100px;
     width: 100%;
@@ -123,6 +111,10 @@ nav li, a, button{
     animation-delay: 3s; 
     animation-iteration-count: 1;
 }
+.boton-nav:hover{
+    transform: scale(1.09);
+    transition: all 1s;
+}
 nav ul li{
     display: inline-block;
 }
@@ -140,11 +132,37 @@ li a.active,li a:hover{
     display: none;
 }
 /* fin nav */
-/* comienzo slider " index"*/
-.textoslider{
-    margin-bottom: 100px;
-    text-align: center;
+/* titulo inicio */
+.contenedor-title {
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+    background-color: #010101;
 }
+.contenedor-title h1 {
+    background-image: url("https://media0.giphy.com/media/l0MYwXxKiwW39Dwcw/giphy.gif?cid=ecf05e479jsyw8ilrhr232rbm28u4ltrujhcs7q08s8lnu44&rid=giphy.gif&ct=g");
+    background-position: bottom;
+	background-size: cover;
+	color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+	font-size: 45px;
+	line-height: 1;
+	margin: 20px;
+    cursor: pointer;
+}
+/* .contenedor-title h1:hover{
+    transform: scale(1.2);
+    transition: 1s;
+} */
+
+/* titulo fin */
+/* comienzo slider " index"*/
 .slider{
     width: 100%;
     /* margin: auto; */
@@ -191,6 +209,91 @@ li a.active,li a:hover{
     100% {margin-left: -600%;}
 }
 /* fin slider */
+/* inicio cartas */
+.titulo-awards {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+    background-color: #010101;
+}
+.titulo-awards h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-position: top left;
+	background-size: cover;
+	color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 35px;
+	line-height: 1;
+	margin: 20px;
+    cursor: pointer;
+}
+.fondo-carta{
+    background-image: url("https://cdn.vox-cdn.com/thumbor/10xaPryPiEIOB0HldAmUP1wwJk4=/150x0:1770x1080/1400x1400/filters:focal(150x0:1770x1080):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/44284738/the-game-awards-trophy-weta_1920.0.0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+.contenedor-carta{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+} 
+.carta{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: inset 2px #808080;
+}
+.carta img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.carta h4{
+    text-align: center;
+    padding: 20px;
+}
+.titulo-carta{
+    font-size: 20px;
+    cursor: pointer;
+}
+.carta > div{
+    padding: 20px;
+}
+.carta:nth-child(even) img{
+    order: 2;
+}
+.texto-carta{
+    opacity: 0.7;
+}
+.btnn{
+    display: inline-block;
+    background-color: #494848;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: auto;
+}
+.btnn:hover{
+    transform: scale(1.07);
+    transition: all 1s;
+    opacity: 0.8;
+}
+/* fin cartas */
 /*  inico "tiendas" */
 .contenedor {
     min-height: 600px;
@@ -221,14 +324,14 @@ li a.active,li a:hover{
     margin: 0;
     width: 100%;
     padding: 10px;
-    background-color: #0096c7;
+    background-color: #0088A9;
     opacity: 0.9;
     color: #fff;
     font-size: 16px;
     text-align: center;
 }
 .precio:hover{
-    background-color: #0077b6;
+    background-color: #0077b6; 
 }
 a:hover{
     color: #fff;
@@ -354,7 +457,6 @@ input::placeholder{
     border: 3px solid #000;
     border-radius: 5px;
 }
-
 /* fin registro */
 /* inicio de cuenta */
 .fondo-cuenta{
@@ -373,6 +475,9 @@ input::placeholder{
     font-size: 20px;
     box-shadow: #fff 15px 15px 35px;
     border-radius: 10px;
+}
+.center-cuenta{
+    text-align: center;
 }
 .cuenta h4{
     font-size: 25px;
@@ -419,7 +524,7 @@ input::placeholder{
     align-items: center;
 }
 .cuenta a:hover{
-    color: #fff;;
+    color: #fff;
     text-decoration: underline;
 }
 .cuenta .boton-cuenta{
@@ -484,30 +589,24 @@ footer h5{
     transition: all 1s;
 }
 .segment-one p{
-    /* font-family: cursive; */
-    /* font-family: 'Permanent Marker', cursive; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* color: #fff; */
-    /* opacity: 0.7; */
-
+    text-align: center;
 }
 .segment-two h5{
     color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 3px;
     margin: 10px 0;
     cursor: pointer;
-}
-.segment-two h5::before{
-    content: "|";
-    color: #0088A9;
+    width: 45%;
 }
 .segment-three h5{
     color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 3px;
     margin: 10px 0;
     cursor: pointer;
+    width: 30%;
 }
 .segment-three a{
     padding: 12px;
@@ -518,8 +617,6 @@ footer h5{
     border-radius: 50%;
 }
 .segment-three a i{
-    /* margin-top: 10px;
-    margin-left: 13px; */
     font-size: 25px;
     color: #fff;
 }
@@ -561,21 +658,29 @@ footer h5{
     transform: scale(1.5);
     transition: all 1s;
 }
-.segment-three h5::before{
-    content: "|";
-    color: #0088A9;
-}
 .segment-four h5{
     color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 3px;
     margin: 10px 0;
     cursor: pointer;
+    width: 45%;
+}
+.segment-two h5::before{
+    content: "|";
+    color: #ff0000;
+    padding-right: 10px;
+}
+.segment-three h5::before{
+    content: "|";
+    color: #ff0000;
+    padding-right: 10px;
 }
 .segment-four h5::before{
     content: "|";
-    color: #0088A9;
-} 
+    color: #ff0000;
+    padding-right: 10px;
+}
 .segment-four p{
     cursor: pointer;
 }
@@ -585,6 +690,7 @@ footer h5{
     line-height: 75px;
     cursor: pointer;
     margin-bottom: 0;
+    font-size: 12px;
 }
 .subir{
     height: 50px;
@@ -654,13 +760,15 @@ footer h5{
     #check:checked ~ ul{
         left: 0;
     }
-    /* slider */
-    main h2{
-        font-size: 16px;
-        font-weight: 900;
+    .linkno{
+        display: none;
     }
-    .textoslider{
-        font-size: 12px;
+    /* slider */
+    .contenedor-title{
+        height: 100px;
+    }
+    .contenedor-title h1{
+        font-size: 28px;
     }
     .slider{
         height: 250px;
@@ -669,6 +777,28 @@ footer h5{
     }
     .slider img{
         height: 250px;
+    }
+    /* cartas */
+    .titulo-awards h1{
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    .titulo-carta{
+        font-size: 16px;
+    }
+    .texto-carta{
+        font-size: 12px;
+    }
+    .carta img{
+        height: 250px;
+    }
+    .carta{
+        display: block;
+    }
+    .btnn{
+        padding: 5px;
+        margin-top: 5px;
+        font-size: 14px;
     }
     /* tienda */
     .contenedor{
@@ -679,6 +809,16 @@ footer h5{
         grid-row: 1/3;
         background-size: cover;
         background-position: right;
+    }
+    .item6{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        background-size: cover;
+        background-position: top;
+    }
+    .item5{
+        grid-column: 2/3;
+        grid-row: 3/5;
     }
     .item8{
         grid-column: 1/3;
@@ -708,9 +848,6 @@ footer h5{
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
-    }
-    main h2{
-        font-size: 20px;
     }
     .registro h4{
         font-size: 20px;
@@ -749,9 +886,6 @@ footer h5{
     .fondo-cuenta{
         background-position: center;
     }
-    main h2{
-        font-size: 20px;
-    }
     .cuenta h4{
         font-size: 20px;
     }
@@ -784,6 +918,7 @@ footer h5{
     /* footer */
     footer p{
         line-height: 15px;
+        font-size: 12px;
     }
     footer h5{  
         font-size: 15px;
@@ -801,7 +936,7 @@ footer h5{
     }
     .segment-three h5{
         letter-spacing: 1px;
-        margin: 10px 0;
+        margin: 0;
     }
     .segment-three a{
         padding: 7px;
@@ -814,16 +949,13 @@ footer h5{
         font-size: 20px;
     }
     .segment-four h5{
-        text-transform: uppercase;
         letter-spacing: 2px;
         margin: 10px 0;
     }
-    .segment-four h5::before{
-        content: "|";
-    } 
     .footer-bottom-text{  
         text-align: center;
         line-height: 50px;
+        font-size: 10px;
     }
     .subir{
         height: 30px;
@@ -887,6 +1019,32 @@ footer h5{
     .slider img{
         height: 350px;
     }
+    /* cartas */
+    .carta{
+        display: block;
+    }
+    .titulo-awards h1{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .titulo-carta{
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .texto-carta{
+        font-size: 15px;
+    }
+    .carta img{
+        height: 350px;
+    }
+    .carta{
+        display: block;
+    }
+    .btnn{
+        padding: 7px;
+        margin-top: 7px;
+        font-size: 16px;
+    }
     /* tienda */
     .contenedor{
         grid-template-columns: repeat(4, 1fr);
@@ -906,6 +1064,7 @@ footer h5{
     .item8{
         grid-column: 3/5;
     }
+    
     /* registro */
     .fondo{
         background-size: cover;
@@ -949,9 +1108,6 @@ footer h5{
     .fondo-cuenta{
         background-position: center;
     }
-    main h2{
-        font-size: 30px;
-    }
     .cuenta h4{
         font-size: 30px;
     }
@@ -984,12 +1140,49 @@ footer h5{
         border-radius: 5px;
     }
     /* footer */
-    footer{
-        height: 350px;
-        background-position: bottom;
+    footer p{
+        line-height: 15px;
+        font-size: 12px;
     }
-    footer li{
-        margin: 30px 20px; 
+    footer h5{  
+        font-size: 15px;
+    }
+    .footer-top{
+        padding: 30px 0;
+    }
+    .segment-one h5{
+        letter-spacing: 1px;
+        margin: 10px 0;
+    }
+    .segment-two h5{
+        letter-spacing: 1px;
+        margin: 10px 0;
+        width: 30%;
+    }
+    .segment-three h5{
+        letter-spacing: 1px;
+        margin: 0;
+        width: 20%;
+    }
+    .segment-three a{
+        padding: 7px;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border-radius: 50%;
+    }
+    .segment-three a i{
+        font-size: 20px;
+    }
+    .segment-four h5{
+        letter-spacing: 2px;
+        margin: 10px 0;
+        width: 35%;
+    }
+    .footer-bottom-text{  
+        text-align: center;
+        line-height: 50px;
+        font-size: 12px;
     }
     .subir{
         height: 40px;
