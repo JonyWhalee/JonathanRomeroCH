@@ -1110,18 +1110,21 @@ footer h4 {
 
 .segment-two h4::before {
   content: "|";
+  font-weight: 900;
   color: #ff0000;
   padding-right: 10px;
 }
 
 .segment-three h4::before {
   content: "|";
+  font-weight: 900;
   color: #ff0000;
   padding-right: 10px;
 }
 
 .segment-four h4::before {
   content: "|";
+  font-weight: 900;
   color: #ff0000;
   padding-right: 10px;
 }

@@ -820,16 +820,19 @@ footer h4{
 }
 .segment-two h4::before{
     content: "|";
+    font-weight: 900;
     color: #ff0000;
     padding-right: 10px;
 }
 .segment-three h4::before{
     content: "|";
+    font-weight: 900;
     color: #ff0000;
     padding-right: 10px;
 }
 .segment-four h4::before{
     content: "|";
+    font-weight: 900;
     color: #ff0000;
     padding-right: 10px;
 }
@@ -1495,9 +1498,9 @@ footer h4{
         line-height: 35px;
     }
 }
-@media only screen and (min-width:768px){
+// @media only screen and (min-width:768px){
 
-    /* tienda */
+    /* tienda 
 
     .contenedor{
         grid-template-columns: repeat(4, 1fr);
@@ -1536,4 +1539,4 @@ footer h4{
         grid-column: 3/5;
         grid-row: 3/4;
     }
-}
+// }
