@@ -364,6 +364,7 @@ a:hover{
     border: 3px solid $color1;
     filter: grayscale(0%);
     margin: 0;
+    transition: all 1s;
 }
 .item:hover{
     transform: scale(1.04);
@@ -1498,9 +1499,9 @@ footer h4{
         line-height: 35px;
     }
 }
-// @media only screen and (min-width:768px){
+@media only screen and (min-width:768px){
 
-    /* tienda 
+    tienda 
 
     .contenedor{
         grid-template-columns: repeat(4, 1fr);
@@ -1539,4 +1540,4 @@ footer h4{
         grid-column: 3/5;
         grid-row: 3/4;
     }
-// }
+}

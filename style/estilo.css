@@ -509,6 +509,8 @@ a:hover {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
   margin: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .item:hover {
@@ -1854,8 +1856,7 @@ footer h4 {
 }
 
 @media only screen and (min-width: 768px) {
-  /* tienda */
-  .contenedor {
+  tienda .contenedor {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (200px)[3];
