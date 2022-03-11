@@ -389,7 +389,6 @@ li a.active, li a:hover {
 .carta {
   display: -ms-grid;
   display: grid;
-  /* -ms-grid-columns: (1fr)[2]; */
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   background-color: #111;
@@ -1318,7 +1317,6 @@ footer h4 {
             justify-content: center;
   }
   .contenedor {
-    /* -ms-grid-columns: (1fr)[2]; */
         grid-template-columns: repeat(2, 1fr);
   }
   .item1 {
@@ -1359,7 +1357,6 @@ footer h4 {
     background-position: bottom;
   }
   .contenedor {
-    /* -ms-grid-columns: (1fr)[2]; */
         grid-template-columns: repeat(2, 1fr);
   }
   .item1 {
@@ -1660,7 +1657,6 @@ footer h4 {
   }
   /* tienda */
   .contenedor {
-    /* -ms-grid-columns: (1fr)[4]; */
         grid-template-columns: repeat(4, 1fr);
   }
   .item2 {
@@ -1883,9 +1879,7 @@ footer h4 {
 
 @media only screen and (min-width: 768px) {
   .contenedor {
-    /* -ms-grid-columns: (1fr)[4]; */
         grid-template-columns: repeat(4, 1fr);
-    /* -ms-grid-rows: (200px)[3]; */
         grid-template-rows: repeat(3, 200px);
   }
   .item1 {
