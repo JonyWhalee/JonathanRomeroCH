@@ -113,7 +113,7 @@ nav {
   transition: all 1s;
 }
 
-.logo:hover {
+.logo .logo:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 1s;
@@ -137,9 +137,6 @@ nav li, a, button {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-}
-
-.span1 {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   -webkit-animation-iteration-count: 1;
@@ -392,7 +389,7 @@ li a.active, li a:hover {
 .carta {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  /* -ms-grid-columns: (1fr)[2]; */
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   background-color: #111;
@@ -468,10 +465,6 @@ li a.active, li a:hover {
   height: 100px;
   font-size: 35px;
   line-height: 3;
-  cursor: pointer;
-}
-
-.title-tienda h1 {
   font-family: 'Bebas Neue', cursive;
   font-weight: 900;
   text-align: center;
@@ -488,6 +481,7 @@ li a.active, li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .precio {
@@ -641,6 +635,43 @@ a:hover {
 .registro p {
   display: inline;
   text-align: center;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.registro .boton {
+  width: 100%;
+  background: #972117;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  margin: 16px 0;
+  font-size: 16px;
+  border: 3px solid #000;
+  border-radius: 5px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.registro .boton:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.registro .registro a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registro .registro a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .p_bug {
@@ -666,16 +697,6 @@ a:hover {
           transform: scale(1.05);
 }
 
-.boton {
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.boton:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 input::-webkit-input-placeholder {
   color: #fff;
 }
@@ -690,39 +711,6 @@ input::-ms-input-placeholder {
 
 input::placeholder {
   color: #fff;
-}
-
-.registro p {
-  height: 40px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 40px;
-  margin-bottom: 15px;
-}
-
-.registro a {
-  color: #fff;
-  text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.registro a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.registro .boton {
-  width: 100%;
-  background: #972117;
-  border: none;
-  padding: 10px;
-  color: #fff;
-  margin: 16px 0;
-  font-size: 16px;
-  border: 3px solid #000;
-  border-radius: 5px;
 }
 
 /* fin registro */
@@ -759,45 +747,6 @@ input::placeholder {
 .cuenta p {
   display: inline;
   text-align: center;
-}
-
-.p_bug-cuenta {
-  margin-left: 80px;
-}
-
-.controls-cuenta {
-  width: 100%;
-  background: #000;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  border: 2px solid #F4C900;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
-  color: #fff;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.controls-cuenta:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-input::-webkit-input-placeholder {
-  color: #fff;
-}
-
-input:-ms-input-placeholder {
-  color: #fff;
-}
-
-input::-ms-input-placeholder {
-  color: #fff;
-}
-
-input::placeholder {
-  color: #fff;
 }
 
 .cuenta p {
@@ -837,9 +786,48 @@ input::placeholder {
   transition: all 1s;
 }
 
-.boton-cuenta:hover {
+.cuenta .boton-cuenta:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.p_bug-cuenta {
+  margin-left: 80px;
+}
+
+.controls-cuenta {
+  width: 100%;
+  background: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #F4C900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.controls-cuenta:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input:-ms-input-placeholder {
+  color: #fff;
+}
+
+input::-ms-input-placeholder {
+  color: #fff;
+}
+
+input::placeholder {
+  color: #fff;
 }
 
 /* fin de cuenta  */
@@ -1330,7 +1318,7 @@ footer h4 {
             justify-content: center;
   }
   .contenedor {
-    -ms-grid-columns: (1fr)[2];
+    /* -ms-grid-columns: (1fr)[2]; */
         grid-template-columns: repeat(2, 1fr);
   }
   .item1 {
@@ -1371,7 +1359,7 @@ footer h4 {
     background-position: bottom;
   }
   .contenedor {
-    -ms-grid-columns: (1fr)[2];
+    /* -ms-grid-columns: (1fr)[2]; */
         grid-template-columns: repeat(2, 1fr);
   }
   .item1 {
@@ -1440,14 +1428,21 @@ footer h4 {
   .fondo-cuenta {
     background-position: center;
   }
-  .cuenta h1 {
-    font-size: 20px;
-  }
   .cuenta {
     width: 300px;
     height: 500px;
     padding: 40px;
     font-size: 14px;
+  }
+  .cuenta h1 {
+    font-size: 20px;
+  }
+  .cuenta .boton-cuenta {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 14px;
+    border-radius: 5px;
   }
   .controls-cuenta {
     width: 100%;
@@ -1461,13 +1456,6 @@ footer h4 {
   }
   form .p_bug-cuenta {
     margin-left: 40px;
-  }
-  .cuenta .boton-cuenta {
-    width: 100%;
-    padding: 5px;
-    margin: 10px 0;
-    font-size: 14px;
-    border-radius: 5px;
   }
   .wrap {
     width: 300px;
@@ -1672,7 +1660,7 @@ footer h4 {
   }
   /* tienda */
   .contenedor {
-    -ms-grid-columns: (1fr)[4];
+    /* -ms-grid-columns: (1fr)[4]; */
         grid-template-columns: repeat(4, 1fr);
   }
   .item2 {
@@ -1894,10 +1882,10 @@ footer h4 {
 }
 
 @media only screen and (min-width: 768px) {
-  tienda .contenedor {
-    -ms-grid-columns: (1fr)[4];
+  .contenedor {
+    /* -ms-grid-columns: (1fr)[4]; */
         grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (200px)[3];
+    /* -ms-grid-rows: (200px)[3]; */
         grid-template-rows: repeat(3, 200px);
   }
   .item1 {
