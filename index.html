@@ -1,154 +1,359 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <!-- Estoy usandos estas etiquetas meta para mejorar el SEO de mi sitio, "intente" tener un poco de diferencias en las "keywords y description" de los diferentes archivos, para tener mas variedad y poder "llegar a mas personas". Me guie un poco de diferentes pags web, que estan en el mismo rubro -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" StoneShop, la tienda en donde encontras los mejores juegos, con precios mas accesibles de toda la Argentina. Reconocida por tener la mejor atencion del mercado!!">
-    <meta name="keywords" content=" shopping, compras, tienda, entretenimientos, juegos, economicos, awards, fifa, noticias, jugadores, tienda, 2022, exclucivos, tendencias, 4k, hd">
-    <link rel="icon" href="multimedia/skull.ico.png">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/estilo.css">
-    <title>StoneShop</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
-            <article class="contenedor-title">
-                <a href="#">
-                    <h1 class="logo">StoneShop</h1>
-                </a>
-            </article>
-            <ul class="nav__links">
-                <li class="link"><a class="active" href="#">Inicio</a></li>
-                <li class="link"><a href="tienda.html">Tienda</a></li>
-                <li class="link"><a href="sucursal.html">¿Como llegar?</a></li>
-                <li class="link"><a class="linkno" href="#redes">Redes</a></li>  
-            </ul>
-            <div class="boton-nav">
-                <a href="registro.html">    
-                    <button class="animate__animated animate__rubberBand span1"> Iniciar sesión</button>
-                </a>
-            </div> 
-        </nav>
-    </header>
-    <main> 
-        <section>
-            <div class="slider">
-                <ul> 
-                    <li><a href="registro.html"><img src="https://as01.epimg.net/meristation/imagenes/2021/12/12/noticias/1639300650_471838_1639300814_noticia_normal.jpg" alt="valhalla"></a></li>
-                    <li><a href="registro.html"><img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/10/06/16335318385527.jpg" alt="far cry 6"></a></li>
-                    <li><a href="registro.html"><img src="https://cdn1.epicgames.com/b30b6d1b4dfd4dcc93b5490be5e094e5/offer/RDR2476298253_Epic_Games_Wishlist_RDR2_2560x1440_V01-2560x1440-2a9ebe1f7ee202102555be202d5632ec.jpg" alt="redredation 2"></a></li>
-                    <li><a href="registro.html"><img src="https://www.irrompibles.net/irrwp/wp-content/uploads/2020/05/TLOUPII_Destacada.jpg" alt="the last of us"></a></li>
-                    <li><a href="registro.html"><img src="https://www.solofondos.com/wp-content/uploads/2016/08/gta-5-online-wallpapernuevas-im-genes-de-grand-theft-auto-v-yo-soy-un-gamer-4m1x08vq-copia.png" alt="gta v"></a></li>
-                    <li><a href="registro.html"><img src="https://as01.epimg.net/meristation/imagenes/2020/11/30/analisis/1606716947_243504_1606748672_noticia_normal.jpg" alt="visage"></a> </li>
-                    <li><a href="registro.html"><img src="https://compass-ssl.xbox.com/assets/9c/94/9c944d9c-7ef1-4b46-9f68-9b02966d3993.jpg?n=Halo-Infinite_GLP-Page-Hero-0_1083x609.jpg" alt="helo"></a></li>                
+    <head>
+        <!-- Estoy usandos estas etiquetas meta para mejorar el SEO de mi sitio, "intente" tener un poco de diferencias en las "keywords y description" de los diferentes archivos, para tener mas variedad y poder "llegar a mas personas". Me guie un poco de diferentes pags web, que estan en el mismo rubro -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content=" StoneShop, la tienda en donde encontras los mejores juegos, con precios mas accesibles de toda la Argentina. Reconocida por tener la mejor atencion del mercado!!"
+        />
+        <meta
+            name="keywords"
+            content=" shopping, compras, tienda, entretenimientos, juegos, economicos, awards, fifa, noticias, jugadores, tienda, 2022, exclucivos, tendencias, 4k, hd"
+        />
+        <link rel="icon" href="multimedia/skull.ico.png" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style/estilo.css" />
+        <title>StoneShop</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn"
+                    ><i class="fas fa-bars"></i
+                ></label>
+                <article class="contenedor-title">
+                    <a href="#">
+                        <h1 class="logo">StoneShop</h1>
+                    </a>
+                </article>
+                <ul class="nav__links">
+                    <li class="link"><a class="active" href="#">Inicio</a></li>
+                    <li class="link"><a href="tienda.html">Tienda</a></li>
+                    <li class="link">
+                        <a href="sucursal.html">¿Como llegar?</a>
+                    </li>
+                    <li class="link">
+                        <a class="linkno" href="#redes">Redes</a>
+                    </li>
                 </ul>
+                <div class="boton-nav">
+                    <a href="registro.html">
+                        <button
+                            class="animate__animated animate__rubberBand span1"
+                        >
+                            Iniciar sesión
+                        </button>
+                    </a>
                 </div>
-        </section>
-        <!-- cartas -->
-        <div class="titulo-awards">
-            <h2>The Game Awards!</h2>
-        </div>
-        <div class="fondo-carta">
-            <div class="contenedor-carta">
-                <section class="carta" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
-                    <img src="https://i.blogs.es/22fb0f/wccfittakestwo2-1/450_1000.jpeg" alt="It Takes Two">
-                    <div>
-                        <h3 class="titulo-carta">It Takes Two</h3>
-                        <p class="texto-carta">"It Takes Two" ha sido elegido Juego del Año en The Game Awards 2021. El videojuego de Hazelight, Electronic Arts y dirijido por Josef Fares, no ha sido lo único que se han ganado, ya que se lleva también el premio a mejor juego familiar y mejor juego multijugador. </p>
-                        <a href="registro.html" class="btnn"> Comprar </a>
-                    </div>
-                </section>
-                <section class="carta" data-aos="fade-left"  data-aos-duration="1000"data-aos-easing="linear">
-                    <img src="https://as01.epimg.net/meristation/imagenes/2020/06/11/analisis/1591883470_004485_1591942609_portada_normal.jpg" alt=" The Last of Us Part II">
-                    <div>
-                        <h3 class="titulo-carta"> The Last of Us Part II</h3>
-                        <p class="texto-carta">El máximo premio de The Game Awards 2020, se lo llevó The Last of Us Part II. El título desarrollado por Naughty Dog fue el ganador de la categoría el "Mejor juego del año", a la vez llevandose otros 4 premios mas.</p>
-                        <a href="registro.html" class="btnn"> Comprar </a>
-                    </div>
-                </section>
-                <section class="carta" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
-                    <img src="https://as01.epimg.net/meristation/imagenes/2019/02/12/avances/1549991406_429548_1550039476_noticia_normal.jpg" alt="Sekiro: Shadows Die Twice">
-                    <div>
-                        <h3 class="titulo-carta">Sekiro: Shadows Die Twice</h3>
-                        <p class="texto-carta">Sekiro: Shadows Die Twice es el ganador de Game Awards 2019. Después de más de tres horas, la gala dirijida por Geoff Keighley ha dejado a lo último de FromSoftware como el mejor videojuego de 2019. La votación de decenas de medios internacionales, ha decidido que sea éste el elegido de entre los seis candidatos.</p>
-                        <a href="registro.html" class="btnn"> Comprar </a>
-                    </div>
-                </section>
-                <section class="carta" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
-                    <img src="https://culturageek.com.ar/wp-content/uploads/2018/04/Culturageek.com_.ar-Review-God-of-War-1.jpg" alt="God of War">
-                    <div>
-                        <h3 class="titulo-carta">God of War</h3>
-                        <p class="texto-carta">God of War se corona como el mejor juego del año en los Game Awards 2018. La última aventura protagonizada por Kratos ha roto todos los pronósticos que apuntaban a que Red Dead Redemption 2, que sería el juego que se llevaría el premio, aunque la obra maestra de Rockstar tampoco se ha quedado con las manos vacías al haber salido vencedora en cuatro categorías diferentes, destacando especialmente su brillante apartado sonoro.</p>
-                        <a href="registro.html" class="btnn"> Comprar </a>   
-                    </div>
-                </section>
-                <section class="carta" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
-                    <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/es_LA/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/hero?v=2022021721" alt="Zelda Breath of the Wild">
-                    <div>
-                        <h3 class="titulo-carta">Zelda: Breath of the Wild</h3>
-                        <p class="texto-carta">La maravillosa obra maestra de Nintendo Switch se alzó con el premio GOTY 2017 (Game Awards), y hasta el día de hoy es recordado como uno de los mejores Zelda (incluso como el mejor) de toda la franquicia de Nintendo.</p>
-                        <a href="registro.html" class="btnn"> Comprar </a>
-                    </div>
-                </section>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="slider">
+                    <ul>
+                        <li>
+                            <a href="registro.html"
+                                ><img
+                                    src="https://as01.epimg.net/meristation/imagenes/2021/12/12/noticias/1639300650_471838_1639300814_noticia_normal.jpg"
+                                    alt="valhalla"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="registro.html"
+                                ><img
+                                    src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/10/06/16335318385527.jpg"
+                                    alt="far cry 6"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="registro.html"
+                                ><img
+                                    src="https://cdn1.epicgames.com/b30b6d1b4dfd4dcc93b5490be5e094e5/offer/RDR2476298253_Epic_Games_Wishlist_RDR2_2560x1440_V01-2560x1440-2a9ebe1f7ee202102555be202d5632ec.jpg"
+                                    alt="redredation 2"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="registro.html"
+                                ><img
+                                    src="https://www.irrompibles.net/irrwp/wp-content/uploads/2020/05/TLOUPII_Destacada.jpg"
+                                    alt="the last of us"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="registro.html"
+                                ><img
+                                    src="https://www.solofondos.com/wp-content/uploads/2016/08/gta-5-online-wallpapernuevas-im-genes-de-grand-theft-auto-v-yo-soy-un-gamer-4m1x08vq-copia.png"
+                                    alt="gta v"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="registro.html"
+                                ><img
+                                    src="https://as01.epimg.net/meristation/imagenes/2020/11/30/analisis/1606716947_243504_1606748672_noticia_normal.jpg"
+                                    alt="visage"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="registro.html"
+                                ><img
+                                    src="https://compass-ssl.xbox.com/assets/9c/94/9c944d9c-7ef1-4b46-9f68-9b02966d3993.jpg?n=Halo-Infinite_GLP-Page-Hero-0_1083x609.jpg"
+                                    alt="helo"
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- cartas -->
+            <div class="titulo-awards">
+                <h2>The Game Awards!</h2>
             </div>
-        </div>
-    </main>
-    <footer id="redes">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-                        <h4>StoneShop</h4>
-                        <p>La tienda en donde encontras los mejores juegos con precios mas accesibles de toda la Argentina. Reconocida por tener la mejor atencion de todo el shopping!!</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
-                        <h4>Nosotros</h4>
-                        <p>El motivo por el cual cree este sitio web, fue porque desde niño tenía una gran pasión por los videojuegos. Con esa idea en mente quise recrear los mejores momentos que he vivido con el resto de personas que visiten este sitio.</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
-                        <h4>Redes</h4>
-                        <a class="instagram" href="https://www.instagram.com/" target="blank_"><i class=" fab fa-instagram"></i></a>
-                        <a class="facebook" href="https://www.facebook.com/" target="blank_"><i class="fab fa-facebook"></i></a>
-                        <a class="twitter" href="https://twitter.com/" target="blank_"><i class=" fab fa-twitter"></i></a>
-                        <a class="linkedin" href="https://www.linkedin.com/feed/" target="blank_"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
-                        <h4>Contacto</h4>
-                        <p>
-                            <i class="fas fa-home mr-3"></i>Av. Corrientes 3247  
-                        </p>
-                        <p>
-                            <i class="fas fa-envelope mr-3"></i>StoneShop@gmail.com
-                        </p>
-                        <p>
-                            <i class="fas fa-phone mr-3"></i>011 4959-3551  
-                        </p>
+            <div class="fondo-carta">
+                <div class="contenedor-carta">
+                    <section
+                        class="carta"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                    >
+                        <img
+                            src="https://i.blogs.es/22fb0f/wccfittakestwo2-1/450_1000.jpeg"
+                            alt="It Takes Two"
+                        />
+                        <div>
+                            <h3 class="titulo-carta">It Takes Two</h3>
+                            <p class="texto-carta">
+                                "It Takes Two" ha sido elegido Juego del Año en
+                                The Game Awards 2021. El videojuego de
+                                Hazelight, Electronic Arts y dirijido por Josef
+                                Fares, no ha sido lo único que se han ganado, ya
+                                que se lleva también el premio a mejor juego
+                                familiar y mejor juego multijugador.
+                            </p>
+                            <a href="registro.html" class="btnn"> Comprar </a>
+                        </div>
+                    </section>
+                    <section
+                        class="carta"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        data-aos-easing="linear"
+                    >
+                        <img
+                            src="https://as01.epimg.net/meristation/imagenes/2020/06/11/analisis/1591883470_004485_1591942609_portada_normal.jpg"
+                            alt=" The Last of Us Part II"
+                        />
+                        <div>
+                            <h3 class="titulo-carta">The Last of Us Part II</h3>
+                            <p class="texto-carta">
+                                El máximo premio de The Game Awards 2020, se lo
+                                llevó The Last of Us Part II. El título
+                                desarrollado por Naughty Dog fue el ganador de
+                                la categoría el "Mejor juego del año", a la vez
+                                llevandose otros 4 premios mas.
+                            </p>
+                            <a href="registro.html" class="btnn"> Comprar </a>
+                        </div>
+                    </section>
+                    <section
+                        class="carta"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                    >
+                        <img
+                            src="https://as01.epimg.net/meristation/imagenes/2019/02/12/avances/1549991406_429548_1550039476_noticia_normal.jpg"
+                            alt="Sekiro: Shadows Die Twice"
+                        />
+                        <div>
+                            <h3 class="titulo-carta">
+                                Sekiro: Shadows Die Twice
+                            </h3>
+                            <p class="texto-carta">
+                                Sekiro: Shadows Die Twice es el ganador de Game
+                                Awards 2019. Después de más de tres horas, la
+                                gala dirijida por Geoff Keighley ha dejado a lo
+                                último de FromSoftware como el mejor videojuego
+                                de 2019. La votación de decenas de medios
+                                internacionales, ha decidido que sea éste el
+                                elegido de entre los seis candidatos.
+                            </p>
+                            <a href="registro.html" class="btnn"> Comprar </a>
+                        </div>
+                    </section>
+                    <section
+                        class="carta"
+                        data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                    >
+                        <img
+                            src="https://culturageek.com.ar/wp-content/uploads/2018/04/Culturageek.com_.ar-Review-God-of-War-1.jpg"
+                            alt="God of War"
+                        />
+                        <div>
+                            <h3 class="titulo-carta">God of War</h3>
+                            <p class="texto-carta">
+                                God of War se corona como el mejor juego del año
+                                en los Game Awards 2018. La última aventura
+                                protagonizada por Kratos ha roto todos los
+                                pronósticos que apuntaban a que Red Dead
+                                Redemption 2, que sería el juego que se llevaría
+                                el premio, aunque la obra maestra de Rockstar
+                                tampoco se ha quedado con las manos vacías al
+                                haber salido vencedora en cuatro categorías
+                                diferentes, destacando especialmente su
+                                brillante apartado sonoro.
+                            </p>
+                            <a href="registro.html" class="btnn"> Comprar </a>
+                        </div>
+                    </section>
+                    <section
+                        class="carta"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                    >
+                        <img
+                            src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/es_LA/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/hero?v=2022021721"
+                            alt="Zelda Breath of the Wild"
+                        />
+                        <div>
+                            <h3 class="titulo-carta">
+                                Zelda: Breath of the Wild
+                            </h3>
+                            <p class="texto-carta">
+                                La maravillosa obra maestra de Nintendo Switch
+                                se alzó con el premio GOTY 2017 (Game Awards), y
+                                hasta el día de hoy es recordado como uno de los
+                                mejores Zelda (incluso como el mejor) de toda la
+                                franquicia de Nintendo.
+                            </p>
+                            <a href="registro.html" class="btnn"> Comprar </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer id="redes">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                            <h4>StoneShop</h4>
+                            <p>
+                                La tienda en donde encontras los mejores juegos
+                                con precios mas accesibles de toda la Argentina.
+                                Reconocida por tener la mejor atencion de todo
+                                el shopping!!
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+                            <h4>Nosotros</h4>
+                            <p>
+                                El motivo por el cual cree este sitio web, fue
+                                porque desde niño tenía una gran pasión por los
+                                videojuegos. Con esa idea en mente quise recrear
+                                los mejores momentos que he vivido con el resto
+                                de personas que visiten este sitio.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+                            <h4>Redes</h4>
+                            <a
+                                class="instagram"
+                                href="https://www.instagram.com/"
+                                target="blank_"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                            <a
+                                class="facebook"
+                                href="https://www.facebook.com/"
+                                target="blank_"
+                                ><i class="fab fa-facebook"></i
+                            ></a>
+                            <a
+                                class="twitter"
+                                href="https://twitter.com/"
+                                target="blank_"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                            <a
+                                class="linkedin"
+                                href="https://www.linkedin.com/feed/"
+                                target="blank_"
+                                ><i class="fab fa-linkedin"></i
+                            ></a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+                            <h4>Contacto</h4>
+                            <p>
+                                <i class="fas fa-home mr-3"></i>Av. Corrientes
+                                3247
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i
+                                >StoneShop@gmail.com
+                            </p>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i>011 4959-3551
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <p class="footer-bottom-text">COPYRIGHT &copy; 2022 | Diseño y desarrollo con 💖 por Jonathan Romero.</p>
-        <a href="#" class="subir">
-            <i class="fas fa-angle-up"></i>
-        </a>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ 
-            offset:400,
-            duration:1000
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-</body>
+            <p class="footer-bottom-text">
+                COPYRIGHT &copy; 2022 | Diseño y desarrollo con 💖 por Jonathan
+                Romero.
+            </p>
+            <a href="#" class="subir">
+                <i class="fas fa-angle-up"></i>
+            </a>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400,
+                duration: 1000,
+            });
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
